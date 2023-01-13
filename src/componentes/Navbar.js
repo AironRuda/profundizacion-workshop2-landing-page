@@ -1,24 +1,11 @@
 import React from "react";
-
-const links = ["About", "Carrer", "Events", "Product", "Support"];
+import NavbarList from "./NavbarList";
 
 const Navbar = () => {
-  const createLinks = (linksArray) => {
-    return linksArray.map((e, i) => (
-      <li className="nav-item" key={i}>
-        <a className="nav-link active" aria-current="page" href="#">
-          {e}
-        </a>
-      </li>
-    ));
-  };
-
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar bg-body-tertiary">
       <div className="container-fluid ">
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">{createLinks(links)}</ul>
-        </div>
+        <ul className="navbar-nav">{NavbarList()}</ul>
       </div>
     </nav>
   );

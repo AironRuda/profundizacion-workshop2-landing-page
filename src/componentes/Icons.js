@@ -7,11 +7,11 @@ import InstagramLogo from "../images/icon-instagram.svg";
 const Icons = () => {
   return (
     <div>
-      <div>
-        <img src={FaceBookLogo} alt="" />
-        <img src={TwitterLogo} alt="" />
-        <img src={PinterestLogo} alt="" />
-        <img src={InstagramLogo} alt="" />
+      <div className="p-1">
+        <img className="p-2" src={FaceBookLogo} alt="" />
+        <img className="p-2" src={TwitterLogo} alt="" />
+        <img className="p-2" src={PinterestLogo} alt="" />
+        <img className="p-2" src={InstagramLogo} alt="" />
       </div>
       <p>2021 | Loopstudios. All rights reserved</p>
     </div>
