@@ -1,9 +1,14 @@
-import './App.scss';
-import OurCreations from './componentes/OurCreations';
+import "./App.scss";
+import Footer from "./componentes/Footer";
+import OurCreations from "./componentes/OurCreations";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div className='App'>
+    <div className="d-flex flex-column">
+      <Header />
+      <OurCreations />
+      <Footer />
     </div>
   );
 }
