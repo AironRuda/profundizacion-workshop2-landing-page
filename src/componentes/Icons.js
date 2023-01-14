@@ -6,7 +6,7 @@ import InstagramLogo from "../images/icon-instagram.svg";
 
 const Icons = () => {
   return (
-    <div>
+    <div className="d-flex align-items-center flex-column">
       <div className="p-1">
         <img className="p-2" src={FaceBookLogo} alt="" />
         <img className="p-2" src={TwitterLogo} alt="" />

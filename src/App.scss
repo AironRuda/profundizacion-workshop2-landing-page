@@ -1,13 +1,85 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
-header{
-    background-image: url('./images/desktop/image-hero.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90vh;
-    padding-bottom: 500px;
-    .titulo{
-        border: 1px solid white;
-        width: 45vw;
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300;700&display=swap');
+
+$primary-font: 'Josefin Sans', sans-serif;
+$secondary-font: 'Alata', sans-serif;
+
+* {
+  font-family: $primary-font;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+header {
+  background-image: url('./images/desktop/image-hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+
+  .navbar-brand {
+    font-size: 50px;
+  }
+
+  .titulo {
+    border: 1px solid white;
+    width: 50vw;
+    h1 {
+      font-size: 60px;
     }
-    
+  }
+}
+
+main {
+  position: relative;
+  width: 80vw;
+  .main-img {
+    width: 50vw;
+  }
+  .main-text {
+    position: absolute;
+    bottom: 8vh;
+    right: 12vw;
+    width: 40vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  header {
+    .titulo {
+      width: 80vw;
+    }
+  }
+
+  main {
+    position: relative;
+    width: 100vw;
+    .main-img {
+      width: 80vw;
+    }
+    .main-text {
+      position: relative;
+      width: 80vw;
+      bottom: auto;
+      right: auto;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    .navbar-brand {
+      font-size: 25px;
+    }
+  
+    .titulo {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
 }
