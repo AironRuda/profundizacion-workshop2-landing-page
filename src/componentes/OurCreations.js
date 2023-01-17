@@ -17,7 +17,7 @@ export default class OurCreations extends Component {
 
   render() {
     return (
-      <section className='container p-5 d-flex flex-column gap-md-5 gap-3'>
+      <section className='container p-5 d-flex flex-column gap-md-5 gap-3 mb-5'>
         <div className='row d-flex flex-row justify-content-md-between justify-content-center mb-4 mx-md-4 px-md-5'>
           <h2 className='col-12 col-md-6 text-md-start text-center' >OUR CREATIONS</h2>
           <button className='col-3' style={{ width: 150 }}>
